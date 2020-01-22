@@ -1,0 +1,8 @@
+Code use:
+Primarily HTML and CSS, may try some PHP, JavaScript, and even database access through MySQL later
+
+What pages should be apart of the nav bar?
+
+Ideas:
+1. Interactive map with recycling locations on campus
+2. "Contact us" form that sends email to club President to inquire about joining club or getting info (PHP or javascript)
