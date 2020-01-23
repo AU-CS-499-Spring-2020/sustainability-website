@@ -6,3 +6,39 @@ What pages should be apart of the nav bar?
 Ideas:
 1. Interactive map with recycling locations on campus
 2. "Contact us" form that sends email to club President to inquire about joining club or getting info (PHP or javascript)
+
+Recycle Website
+****************************************************************************************************
+Plan of Attack
+----------------------------------------------------------------------------------------------------
+1) Research each webpage idea and how it will be done
+2) Everybody pick what webpage they want
+3) Work on own web page & communicate colors and themes and ask for help if needed
+____________________________________________________________________________________________________
+Recycle Website pages Ideas
+----------------------------------------------------------------------------------------------------
+-Interactive map of campus
+	-Hover over location => name of location & recycle type symbols (ex. ♻1)
+	-Click location => lists what can be recycled there
+	-Search & select recycle type => highlight locations where it can be recycled
+
+-Information page
+	-recycle symbols meaning
+	-what can be recycled and when you shouldn't (greasy pizza box)
+	-Statistics about waste and such
+
+-News page
+	-share news about companies and organizations going green
+	-basically sharing any news with users
+	-Sust. Club post anything (meeting place change, campus policy change, etc.)
+----------------------------------------------------------------------------------------------------
+Sustainability Club meeting ideas
+----------------------------------------------------------------------------------------------------
+-competition thing (might be hard 😬)
+	-enter what you recycled and earn green points
+		-send in pictures and such and be verified by admins(club members)
+
+-carbon footprint calculator specifically for college campuses
+	-enter in facts about where and how you live and then math stuff and BOOM, carbon footprint
+____________________________________________________________________________________________________
+****************************************************************************************************
