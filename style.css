@@ -1,19 +1,25 @@
 body {
-    font-family: Arial;
+    font-family: "Comic Sans MS", cursive, sans-serif;
     padding: 10px;
     background-color: purple;
 }
 
 h1 {
     color: white;
-    font-family: verdana;
+    font-family: "Comic Sans MS", cursive, sans-serif;
     font-size: 200%;
+}
+
+h2 {
+	color: white;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 150%;
 }
 
 p {
     color: white;
-    font-family: Arial;
-    font-size: 150%;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 130%;
     /* border: 1px solid black; */
 }
 
@@ -56,7 +62,7 @@ main {
 
 footer {
 	display: block;
-	background : #5b0058;
+	/*background : #5b0058;*/
 	padding: 1px;
 	color: white;
 	font-size: 100%;
@@ -66,12 +72,14 @@ footer {
 
 footer p {
 	color: white;
-    font-family: Arial;
+    font-family: "Comic Sans MS", cursive, sans-serif;
     font-size: 110%;
 }
 
 section {
-	
+	float: left;
+	margin: 0 1.5%;
+	width: 63%;
 }
 
 article {
@@ -85,7 +93,10 @@ article {
 }
 
 aside {
-	display: block;
+	/*display: block;
 	background: #5b0058;
-	padding: 10px;
+	padding: 10px;*/
+	float: right;
+	margin: 0 1.5%;
+	width: 30%;
 }
