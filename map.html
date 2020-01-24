@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- Info source for html coding with the latest html5 standards: https://www.w3schools.com -->
+<!-- Using html5 semantic style layout -->
+<html lang="en-US">
+    <head>
+		<meta charset="UTF-8">
+		<title>Sustainability Club - Map</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="icon" type="image/x-icon" href="icon.ico">
+		
+		<!-- Leaflet Map -->
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+		integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+		crossorigin=""/>
+		<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+		integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+		crossorigin=""></script>
+		
+		<style>
+			#mapid { height: 800px; }
+		</style>
+		
+    </head>
+    <body>
+        <!-- Header -->
+		<header>
+			<a href="http://ashland.edu" target="_blank"><img src="logo.png"></a>
+        
+			<h1>
+				AU's Sustainability Club
+			</h1>
+		</header>
+		
+		
+		<!-- Menu Bar -->
+		<nav>
+			<a href="home.html">Home</a> |
+			<a href="map.html">Map</a> |
+			<a href="involved.html">Get Involved</a> |
+			<a href="members.html">Members</a> |
+            <a href="about.html">About Us</a> |
+            <a href="contact.html">Contact Us</a> |
+            <a href="info.html">Information</a>
+		</nav>
+		<!-- Body -->
+		<br>
+		<main>
+			<!-- Map -->
+			<section>
+			<center>
+				<div id="map" style="width: 1000px; height: 800px;"></div>
+				<script>
+					var southWest = L.latLng(40.85766, -82.32439),
+					northEast = L.latLng(40.86407, -82.31572),
+					bounds = L.latLngBounds(southWest, northEast);
+					
+					var map = L.map('map', {
+						center: [40.86085, -82.32048],
+						zoom: 17,
+						minZoom: 16,
+						zoomControl: true,
+						attributionControl: true,
+						zoomSnap: 0.25,
+						zoomDelta: 0.25,
+						maxBounds: bounds
+						});
+					map.fitBounds(bounds);
+					
+					var marker = L.marker([40.86097, -82.32089]).addTo(map);
+					marker.bindPopup("<b>Student Center</b><br>Recycle plastic and paper here.");
+					
+					var marker = L.marker([40.86262, -82.32286]).addTo(map);
+					marker.bindPopup("<b>Andrews Hall</b><br>Recycle plastic, paper, ewaste here.");
+					
+					L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+					maxZoom: 18,
+					attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> contributors, ' +
+					'<a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank">CC-BY-SA</a>, ' +
+					'Imagery © <a href="https://www.mapbox.com/" target="_blank">Mapbox</a>',
+					id: 'mapbox/satellite-v9'
+					}).addTo(map);
+				</script>
+			</center>
+			</section>
+			<aside>
+				<article>
+					<p>Use the map to find areas at Ashland University that you can recycle at!</p>
+				</article>
+			</aside>
+		</main>
+		
+		<!-- Footer -->
+		<br>
+		<footer>
+			<p>
+				2020 Ashland University - CS 499 Team Sustain
+			</p>
+		</footer>
+    </body>
+</html>
