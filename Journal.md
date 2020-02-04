@@ -14,17 +14,15 @@ Jan 23-
 
  Kyle - Fixes and changes to initial homepage
  
- Ben - Wrote prospectus
- 
  Group Meeting - 9AM
 
 Jan 24-
 
  Kyle - Created map page rough draft
  
- Kyle - Finished and turned in Prospectus
- 
  Ben - Wrote prospectus
+ 
+ Group edited and turned in Prospectus
 
 Jan 27-
 
@@ -44,7 +42,7 @@ Jan 29-
  
 Jan 31-
 
- Team edited and turned in URCA Abstract
+ Group edited and turned in URCA Abstract
  
 Feb 4 -
 
