@@ -1,26 +1,26 @@
-Kyle Hall:
+Journal:
+
+Jan 21 -
+ Ben - Met with Sustainability Club to get input for website - wrote down all page ideas and descriptions
 
 Jan 22-
- Create ideas.txt
- Created homepage rough draft page
+ Kyle - Create ideas.txt
+ Kyle - Created homepage rough draft page
 
 Jan 23-
- Fixes and changes to initial homepage
+ Kyle - Fixes and changes to initial homepage
+ Ben - Wrote prospectus
+ Group Meeting - 9AM
 
 Jan 24-
- Created map page rough draft
- Finished and turned in Prospectus
+ Kyle - Created map page rough draft
+ Kyle - Finished and turned in Prospectus
+ Ben - Wrote prospectus
 
 Jan 27-
- Created Journal.md
-
-Ben:
-Jan 21-
- Met with Sustainability Club to get input for website - wrote down all page ideas and descriptions
-Jan 23&24-
- Wrote the prospectus
-
-Eric:
-
-Phillip:
-
+ Kyle - Created Journal.md
+ Group Meeting - 9AM
+ 
+Feb 4 -
+ Group Meeting - 12:15PM
+ 
