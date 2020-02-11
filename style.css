@@ -2,7 +2,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
 	background-color: purple;
-	margin: 8px;
+	margin: auto;
 }
 
 h1 {
@@ -20,7 +20,8 @@ h2 {
 p {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 130%;
+	font-size: 130%;
+	margin: auto;
     /* border: 1px solid black; */
 }
 
@@ -30,26 +31,35 @@ img {
 }
 
 header {
-	text-align: center;
+	
     padding: 10px 0px;
     background-color: #5b0058;
     font-weight: bold;
 	color: white;
 	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	justify-content: space-around;
+	/*
+	text-align: center;
+	display: flex;
 	justify-content: center;
 	justify-content: space-evenly;
-	/*
+	
 	border-radius: 2%;
 	position: relative;*/
 }
 
 header h1 {
-	/*text-align: center;
+	align-self: center;
+	text-align: center;
+	/*
 	line-height: 100px;
 	font-size: 50px;*/
 }
 
 header img {
+	align-self: stretch;
 	/*position: absolute;
 	left: 15px;
 	top: 20px;*/
@@ -68,11 +78,11 @@ nav ul {
 	padding: 0;
 	overflow: hidden;
 	background-color: #b900a2;
-  }
+}
   
 nav ul li {
 	float: left;
-  }
+}
   
 nav ul li a {
 	text-decoration: none;
@@ -84,11 +94,16 @@ nav ul li a {
 	margin: 0;
 	font-family: Arial;
 	font-size: 150%;
-  }
+}
   
 nav ul li a:hover {
 	background-color: #4a235a;
-  }
+}
+
+nav ul li a.active {
+	background-color: black;
+	color: #b900a2;
+}
 
 main {
 	background-color: #b900a2;
@@ -125,25 +140,10 @@ footer p {
 
 section {
 	float: left;
-	margin: 0 1.5%;
-	margin-bottom: 20px;
-	width: 63%;
+	margin: 0 1%;
+	/*margin-bottom: 20px;*/
+	width: 60%;
 	/*background-color: white;*/
-}
-
-article {
-	display: block;
-	background : #5b0058;
-	margin: 1.5% 1.5% 0 1.5%;
-	padding: 10px;
-	color: white;
-	font-size: 100%;
-	text-align: left;
-	box-shadow: 0px 0px 5px 5px grey;
-}
-
-aside img {
-	box-shadow: 0px 0px 5px 5px grey;
 }
 
 aside {
@@ -151,7 +151,22 @@ aside {
 	background: #5b0058;
 	padding: 10px;*/
 	float: right;
-	margin: 0 1.5%;
-	margin-bottom: 20px;
-	width: 30%;
+	margin: 0 1%;
+	/*margin-bottom: 20px;*/
+	width: 36%;
+}
+
+aside img {
+	box-shadow: 0px 0px 5px 5px rgb(58, 0, 48);
+}
+
+article {
+	display: block;
+	background : #5b0058;
+	margin: 1.5% 0 1.5% 1.5%;
+	padding: 10px;
+	color: white;
+	font-size: 100%;
+	text-align: left;
+	box-shadow: 0px 0px 5px 5px rgb(58, 0, 48);
 }
