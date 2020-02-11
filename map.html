@@ -7,7 +7,7 @@
 		<title>Sustainability Club - Map</title>
         <link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="icon" type="image/x-icon" href="icon.ico">
-		
+
 		<!-- Leaflet Map -->
 		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 		integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
@@ -19,13 +19,11 @@
 		<style>
 			#mapid { height: 800px; }
 		</style>
-		
     </head>
     <body>
         <!-- Header -->
 		<header>
 			<a href="http://ashland.edu" target="_blank"><img src="logo.png"></a>
-        
 			<h1>
 				AU's Sustainability Club
 			</h1>
@@ -34,19 +32,20 @@
 		
 		<!-- Menu Bar -->
 		<nav>
-			<a href="index.html">Home</a> |
-			<a href="map.html">Map</a> |
-			<a href="involved.html">Get Involved</a> |
-			<a href="members.html">Members</a> |
-            <a href="about.html">About Us</a> |
-            <a href="contact.html">Contact Us</a> |
-            <a href="info.html">Information</a>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="map.html">Map</a></li>
+				<li><a href="info.html">Information</a></li>
+				<li><a href="carbon.html">Carbon Calculator</a></li>
+				<li><a href="news.html">News</a></li>
+				<li><a href="about.html">Contact Us</a></li>
+			</ul>
 		</nav>
 		<!-- Body -->
 		<br>
 		<main>
-			<!-- Map -->
-			<section>
+		<!-- Map -->
+		<section>
 			<center>
 				<div id="map" style="width: 1000px; height: 800px;"></div>
 				<script>
@@ -88,9 +87,7 @@
 				</article>
 			</aside>
 		</main>
-		
 		<!-- Footer -->
-		<br>
 		<footer>
 			<p>
 				2020 Ashland University - CS 499 Team Sustain
