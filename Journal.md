@@ -50,3 +50,8 @@ Feb 4 -
  
 Feb 10 -
  Eric - Updated URCA abstract with Dr. Swansons suggestions
+ Began researching what data and formulas to use for carbon footprint calculator
+ 
+Feb 12 -
+ Eric - More research on carbon footprint calcualtor
+ Emailed Dr. Patricia Saunders with the Enviornmental Science department to get some assistance
