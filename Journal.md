@@ -18,7 +18,7 @@ Jan 23-
 
 Jan 24-
 
- Kyle - Created map page rough draft
+ Kyle - Created map page rough draft, minor fixes/edits
  
  Ben - Wrote prospectus
  
@@ -46,11 +46,17 @@ Jan 31-
  
 Feb 4 -
 
+ Kyle - Add picture and update homepage
+
  Group Meeting - 12:15PM
  
 Feb 10 -
  Eric - Updated URCA abstract with Dr. Swansons suggestions
  Began researching what data and formulas to use for carbon footprint calculator
+ 
+Feb 11 -
+
+ Kyle - Updates to CSS, homepage, map page, fixes
  
 Feb 12 -
  Eric - More research on carbon footprint calcualtor
