@@ -61,3 +61,7 @@ Feb 11 -
 Feb 12 -
  Eric - More research on carbon footprint calcualtor
  Emailed Dr. Patricia Saunders with the Enviornmental Science department to get some assistance
+
+ Feb 24 -
+ 
+ Kyle - Worked on adding location markers and descriptions to the interactive map
