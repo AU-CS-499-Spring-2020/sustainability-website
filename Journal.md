@@ -65,3 +65,4 @@ Feb 12 -
  Feb 24 -
  
  Kyle - Worked on adding location markers and descriptions to the interactive map
+ Kyle - Updated contact info, email links, CSS link color, map GPS boundaries, main page info and external links
