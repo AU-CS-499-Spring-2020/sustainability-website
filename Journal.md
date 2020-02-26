@@ -50,6 +50,10 @@ Feb 4 -
 
  Group Meeting - 12:15PM
  
+ Feb 6 -
+ 
+ Ben - Emailed with club president & representative about desired aesthetics and logo
+ 
 Feb 10 -
  Eric - Updated URCA abstract with Dr. Swansons suggestions
  Began researching what data and formulas to use for carbon footprint calculator
@@ -61,6 +65,9 @@ Feb 11 -
 Feb 12 -
  Eric - More research on carbon footprint calcualtor
  Emailed Dr. Patricia Saunders with the Enviornmental Science department to get some assistance
+ 
+ Feb 16 -
+ Ben - Implemented some color changes - changed nav bar design - tested other aesthetic designs
 
  Feb 24 -
  
@@ -70,3 +77,8 @@ Feb 12 -
  Feb 25 -
  
  Kyle - Added contest page with Google Sheets embedded and updated nav bar with links to it
+ Ben - Worked on page aesthetics - edited logo image to include page title
+ 
+ Feb 26 -
+ 
+ Ben - Even more aesthetic changes - fixed white blurty line around logo - Merged aesthetic changes to master
