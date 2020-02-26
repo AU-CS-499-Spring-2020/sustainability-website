@@ -66,3 +66,7 @@ Feb 12 -
  
  Kyle - Worked on adding location markers and descriptions to the interactive map
  Kyle - Updated contact info, email links, CSS link color, map GPS boundaries, main page info and external links
+ 
+ Feb 25 -
+ 
+ Kyle - Added contest page with Google Sheets embedded and updated nav bar with links to it
