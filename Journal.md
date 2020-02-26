@@ -81,4 +81,4 @@ Feb 12 -
  
  Feb 26 -
  
- Ben - Even more aesthetic changes - fixed white blurty line around logo - Merged aesthetic changes to master
+ Ben - Even more aesthetic changes - fixed white blurry line around logo - Merged aesthetic changes to master
