@@ -82,4 +82,4 @@ Feb 12 -
  Feb 26 -
  
  Ben - Even more aesthetic changes - fixed white blurry line around logo - Merged aesthetic changes to master
- Kyle - Fix broken links and made image backgrounds transparent
+ Kyle - Clean up code: Fix broken links and made image backgrounds transparent, clean up CSS, fix redundancy
