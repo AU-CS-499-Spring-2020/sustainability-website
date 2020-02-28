@@ -8,6 +8,23 @@
 		<title>Information - Sustainable Ashland</title>
         <link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="icon" type="image/x-icon" href="icon.ico">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		
+		<style type="text/css">
+			div {
+				display: none;
+				width: 100%;
+				height: auto;
+				background: transparent;
+				text-align: center;
+				padding-top: 5px;
+			}
+				
+			div.active {
+				display: block;
+			}
+		</style>
     </head>
     <body>
         <!-- Header -->
@@ -32,17 +49,61 @@
 		<!-- Body -->
 		<br>
 		<main>
-			!!!Insert Your Code Here!!!
-			<section>
-				<article>
-					Example
-				</article>
-			</section>
 			<aside>
 				<article>
-					Example
+					<nav role='navigation'>
+						<ul>
+							<li><a data-page="Plastic" href="#">Plastic</a></li>
+							<li><a data-page="Paper" href="#">Paper</a></li>
+							<li><a data-page="E-Waste" href="#">E-Waste</a></li>
+							<li><a data-page="Metal" href="#">Metal</a></li>
+							<li><a data-page="Test" href="#">Test</a></li>
+							<li><a data-page="Test" href="#">Test</a></li>
+							<li><a data-page="Test" href="#">Test</a></li>
+						</ul>
+					</nav>
 				</article>
 			</aside>
+			<section>
+				<article>
+					<div class="Plastic">
+						<h2>Plastic</h2>
+						<br>
+						<p>Plastic recycling info</p>
+					</div>
+					<div class="Paper">
+						<h2>Paper</h2>
+						<br>
+						<p>Paper recycling info</p>
+					</div>
+					<div class="E-Waste">
+						<h2>E-Waste</h2>
+						<br>
+						<p>E-Waste recycling info</p>
+					</div>
+					<div class="Metal">
+						<h2>Metal</h2>
+						<br>
+						<p>Metal recycling info</p>
+					</div>
+					<div class="Test">
+						<h2>Test</h2>
+						<br>
+						<p>Test recycling info</p>
+					</div>
+				</article>
+				<script>
+					var page;
+					$(
+						$("nav li a").hover(function() {
+							page = "."+$(this).data("page");
+						$(page).addClass("active")
+						}, function() {
+							$(page).removeClass("active");
+						})
+					)
+				</script>
+			</section>
 		</main>
 		<!-- Footer -->
 		<footer>

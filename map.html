@@ -9,12 +9,14 @@
         <link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="icon" type="image/x-icon" href="icon.ico">
 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 		<!-- Leaflet Map -->
 		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 		integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 		crossorigin=""/>
 		
-		<style>
+		<style type="text/css">
 			#map {
 				height: 700px;
 				width: 90%;
@@ -44,108 +46,116 @@
 		<!-- Body -->
 		<br>
 		<main>
-		<!-- Map -->
-		<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-		integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-		crossorigin=""></script>
-			<center>
-				<!-- <div id="map" style="width: 1000px; height: 800px;"></div> -->
-				<div id="map"></div>
-				<script>
-					var southWest = L.latLng(40.8587248,-82.3274104),
-					northEast = L.latLng(40.86407, -82.31572),
-					bounds = L.latLngBounds(southWest, northEast);
-					
-					var map = L.map('map', {
-						center: [40.86085, -82.32048],
-						zoom: 25,
-						minZoom: 16,
-						zoomControl: true,
-						attributionControl: true,
-						zoomSnap: 0.25,
-						zoomDelta: 0.25,
-						maxBounds: bounds
-						});
-					map.fitBounds(bounds);
-					
-					var marker = L.marker([40.8613544,-82.3228218]).addTo(map);
-					marker.bindPopup("<b>Student Center</b><br>Recycle plastic and paper here.");
-					
-					var marker = L.marker([40.86262, -82.32286]).addTo(map);
-					marker.bindPopup("<b>Andrews Hall</b><br>Recycle plastic, paper, ewaste here.");
-					
-					var marker = L.marker([40.8629292, -82.325032]).addTo(map);
-					marker.bindPopup("<b>Troop Center</b><br>Recycle plastic and paper here.");
-					
-					var marker = L.marker([40.8615356,-82.3185947]).addTo(map);
-					marker.bindPopup("<b>Center for the Arts</b><br>Recycle plastic and paper here.");
-					
-					var marker = L.marker([40.8615214,-82.319968]).addTo(map);
-					marker.bindPopup("<b>Founders Hall</b><br>Recycle plastic and paper here.");
-					
-					var marker = L.marker([40.8609412,-82.3215277]).addTo(map);
-					marker.bindPopup("<b>Clark Hall</b><br>Recycle plastic and paper here.");
-					
-					var marker = L.marker([40.8606379,-82.322052]).addTo(map);
-					marker.bindPopup("<b>Kilhefner Hall</b><br>Recycle plastic and paper here.");
-					
-					var marker = L.marker([40.8606379,-82.322052]).addTo(map);
-					marker.bindPopup("<b>Kilhefner Hall</b><br>Recycle plastic and paper here.");
-					
-					var marker = L.marker([40.8618652,-82.3238853]).addTo(map);
-					marker.bindPopup("<b>Kem Hall</b><br>Recycle plastic and paper here.");
-					
-					var marker = L.marker([40.8626976,-82.3238617]).addTo(map);
-					marker.bindPopup("<b>Amstutz Hall</b><br>Recycle plastic and paper here.");
-					
-					var marker = L.marker([40.8609327,-82.3194346]).addTo(map);
-					marker.bindPopup("<b>Kates Center for Family and Consumer Sciences</b><br>Recycle plastic and paper here.");
-					
-					var marker = L.marker([40.8629612,-82.3224105]).addTo(map);
-					marker.bindPopup("<b>Facilities Offices</b><br>Recycle plastic and paper here.");
-					
-					var marker = L.marker([40.8614979,-82.321722]).addTo(map);
-					marker.bindPopup("<b>Bixler: Center for the Humanities</b><br>Recycle plastic and paper here.");
-					
-					var marker = L.marker([40.8600439,-82.3211743]).addTo(map);
-					marker.bindPopup("<b>Clayton Hall</b><br>Recycle plastic and paper here.");
-					
-					var marker = L.marker([40.8617702,-82.3210375]).addTo(map);
-					marker.bindPopup("<b>Library</b><br>Recycle plastic and paper here.");
-					
-					var marker = L.marker([40.8610658,-82.3210462]).addTo(map);
-					marker.bindPopup("<b>Patterson</b><br>Recycle plastic and paper here.");
-					
-					var marker = L.marker([40.8606545,-82.3196039]).addTo(map);
-					marker.bindPopup("<b>Kettering</b><br>Recycle plastic and paper here.");
-					
-					var marker = L.marker([40.8626544,-82.3196655]).addTo(map);
-					marker.bindPopup("<b>Dauch College of Business</b><br>Recycle plastic and paper here.");
-					
-					var marker = L.marker([40.8601705,-82.3199337]).addTo(map);
-					marker.bindPopup("<b>Jacbos Hall</b><br>Recycle plastic and paper here.");
-					
-					var marker = L.marker([40.8605792,-82.3209811]).addTo(map);
-					marker.bindPopup("<b>Myers Hall</b><br>Recycle plastic and paper here.");
-					
-					var marker = L.marker([40.8601301,-82.3186625]).addTo(map);
-					marker.bindPopup("<b>Schar College of Education</b><br>Recycle plastic and paper here.");
-					
-					var marker = L.marker([40.8602969,-82.3229748]).addTo(map);
-					marker.bindPopup("<b>Recreation Center</b><br>Recycle plastic and paper here.");
-					
-					var marker = L.marker([40.8619451,-82.3216767]).addTo(map);
-					marker.bindPopup("<b>Chapel</b><br>Recycle plastic and paper here.");
-					
-					L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-					maxZoom: 20,
-					attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> contributors, ' +
-					'<a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank">CC-BY-SA</a>, ' +
-					'Imagery © <a href="https://www.mapbox.com/" target="_blank">Mapbox</a>',
-					id: 'mapbox/streets-v11'
-					}).addTo(map);
-				</script>
-			</center>
+			<section>
+				<!-- Map -->
+				<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+				integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+				crossorigin=""></script>
+				<center>
+					<!-- <div id="map" style="width: 1000px; height: 800px;"></div> -->
+					<div id="map"></div>
+					<script>
+						var southWest = L.latLng(40.8587248,-82.3274104),
+						northEast = L.latLng(40.86407, -82.31572),
+						bounds = L.latLngBounds(southWest, northEast);
+
+						var map = L.map('map', {
+							center: [40.86085, -82.32048],
+							zoom: 25,
+							minZoom: 16,
+							zoomControl: true,
+							attributionControl: true,
+							zoomSnap: 0.25,
+							zoomDelta: 0.25,
+							maxBounds: bounds
+							});
+						map.fitBounds(bounds);
+						
+						var marker = L.marker([40.8613544,-82.3228218]).addTo(map);
+						marker.bindPopup("<b>Student Center</b><br>Recycle plastic and paper here.");
+						
+						var marker = L.marker([40.86262, -82.32286]).addTo(map);
+						marker.bindPopup("<b>Andrews Hall</b><br>Recycle plastic, paper, ewaste here.");
+						
+						var marker = L.marker([40.8629292, -82.325032]).addTo(map);
+						marker.bindPopup("<b>Troop Center</b><br>Recycle plastic and paper here.");
+						
+						var marker = L.marker([40.8615356,-82.3185947]).addTo(map);
+						marker.bindPopup("<b>Center for the Arts</b><br>Recycle plastic and paper here.");
+						
+						var marker = L.marker([40.8615214,-82.319968]).addTo(map);
+						marker.bindPopup("<b>Founders Hall</b><br>Recycle plastic and paper here.");
+						
+						var marker = L.marker([40.8609412,-82.3215277]).addTo(map);
+						marker.bindPopup("<b>Clark Hall</b><br>Recycle plastic and paper here.");
+						
+						var marker = L.marker([40.8606379,-82.322052]).addTo(map);
+						marker.bindPopup("<b>Kilhefner Hall</b><br>Recycle plastic and paper here.");
+						
+						var marker = L.marker([40.8606379,-82.322052]).addTo(map);
+						marker.bindPopup("<b>Kilhefner Hall</b><br>Recycle plastic and paper here.");
+						
+						var marker = L.marker([40.8618652,-82.3238853]).addTo(map);
+						marker.bindPopup("<b>Kem Hall</b><br>Recycle plastic and paper here.");
+						
+						var marker = L.marker([40.8626976,-82.3238617]).addTo(map);
+						marker.bindPopup("<b>Amstutz Hall</b><br>Recycle plastic and paper here.");
+						
+						var marker = L.marker([40.8609327,-82.3194346]).addTo(map);
+						marker.bindPopup("<b>Kates Center for Family and Consumer Sciences</b><br>Recycle plastic and paper here.");
+						
+						var marker = L.marker([40.8629612,-82.3224105]).addTo(map);
+						marker.bindPopup("<b>Facilities Offices</b><br>Recycle plastic and paper here.");
+						
+						var marker = L.marker([40.8614979,-82.321722]).addTo(map);
+						marker.bindPopup("<b>Bixler: Center for the Humanities</b><br>Recycle plastic and paper here.");
+						
+						var marker = L.marker([40.8600439,-82.3211743]).addTo(map);
+						marker.bindPopup("<b>Clayton Hall</b><br>Recycle plastic and paper here.");
+						
+						var marker = L.marker([40.8617702,-82.3210375]).addTo(map);
+						marker.bindPopup("<b>Library</b><br>Recycle plastic and paper here.");
+						
+						var marker = L.marker([40.8610658,-82.3210462]).addTo(map);
+						marker.bindPopup("<b>Patterson</b><br>Recycle plastic and paper here.");
+						
+						var marker = L.marker([40.8606545,-82.3196039]).addTo(map);
+						marker.bindPopup("<b>Kettering</b><br>Recycle plastic and paper here.");
+						
+						var marker = L.marker([40.8626544,-82.3196655]).addTo(map);
+						marker.bindPopup("<b>Dauch College of Business</b><br>Recycle plastic and paper here.");
+						
+						var marker = L.marker([40.8601705,-82.3199337]).addTo(map);
+						marker.bindPopup("<b>Jacbos Hall</b><br>Recycle plastic and paper here.");
+						
+						var marker = L.marker([40.8605792,-82.3209811]).addTo(map);
+						marker.bindPopup("<b>Myers Hall</b><br>Recycle plastic and paper here.");
+						
+						var marker = L.marker([40.8601301,-82.3186625]).addTo(map);
+						marker.bindPopup("<b>Schar College of Education</b><br>Recycle plastic and paper here.");
+						
+						var marker = L.marker([40.8602969,-82.3229748]).addTo(map);
+						marker.bindPopup("<b>Recreation Center</b><br>Recycle plastic and paper here.");
+						
+						var marker = L.marker([40.8619451,-82.3216767]).addTo(map);
+						marker.bindPopup("<b>Chapel</b><br>Recycle plastic and paper here.");
+						
+						L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+						maxZoom: 20,
+						attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> contributors, ' +
+						'<a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank">CC-BY-SA</a>, ' +
+						'Imagery © <a href="https://www.mapbox.com/" target="_blank">Mapbox</a>',
+						id: 'mapbox/streets-v11'
+						}).addTo(map);
+					</script>
+				</center>
+				<br>
+			</section>
+			<aside>
+				<article>
+					<center><h2>Location Information</h2></center>
+				</article>
+			</aside>
 		</main>
 		<!-- Footer -->
 		<footer>

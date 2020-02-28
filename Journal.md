@@ -83,3 +83,8 @@ Feb 12 -
  
  Ben - Even more aesthetic changes - fixed white blurry line around logo - Merged aesthetic changes to master
  Kyle - Clean up code: Fix broken links and made image backgrounds transparent, clean up CSS, fix redundancy
+
+ Feb 28 -
+
+ Kyle - Modified map page to accomodate for potential addition of location information, as well as adding
+  modifications to the mock-up information page
