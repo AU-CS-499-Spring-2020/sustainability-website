@@ -88,3 +88,6 @@ Feb 12 -
 
  Kyle - Modified map page to accomodate for potential addition of location information, as well as adding
   modifications to the mock-up information page
+  
+  Feb 29- 
+  Phil - added cardboard tab and added information to plastic, cardboard and metal tabs. 
