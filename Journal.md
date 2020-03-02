@@ -97,5 +97,8 @@ March 1 -
 
  Ben - There were some tags being modified in "style.css" that only applied to the home page. Now there is a separate css for the home page. I linked the home page to it.
 I also made one for my news page and got a start on it.
+
  Kyle - Worked on incorporating images and nav bar link for locations on map page, fix few broken layouts due to the CSS split of the "section" and "aside" tags from the main CSS so each page
  have it's own body layout, we will continue to work and improve the layouts for each page individually
+ 
+ Phil - added information to paper and edited metal tabs
