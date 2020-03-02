@@ -6,7 +6,8 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<title>Map - Sustainable Ashland</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="homeStyle.css">
 		<link rel="icon" type="image/x-icon" href="icon.ico">
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -19,7 +20,7 @@
 		<style type="text/css">
 			#map {
 				height: 700px;
-				width: 90%;
+				width: 99%;
 			}
 		</style>
     </head>
@@ -153,7 +154,50 @@
 			</section>
 			<aside>
 				<article>
-					<center><h2>Location Information</h2></center>
+					<center><h1>Location Information</h1></center>
+					<!-- Example Navigation Bar -->
+					<nav class="navbar navbar-default" role="navigation">
+						<div class="navbar-collapse navbar-ex1-collapse">
+							<ul class="nav navbar-nav">
+							<!-- Notice each of these tab elements points to a certain ID -->
+								<li class='active'><a class='open-tab' href="#map" data-tab='a'>Meyers</a></li>
+								<li><a class='open-tab' href="#map" data-tab='b'>Post Office/Student Center</a></li>
+								<li><a class='open-tab' href="#map" data-tab='c'>Student Center Second Floor</a></li>
+							</ul>
+						</div>
+					</nav>
+					<div id='content'>
+						<!-- The data-tab attribute will be used by the tab that is clicked to identify the content to show -->
+						<div class='tab' data-tab='a'>
+							<h2>Meyers</h2>
+							<img src="images/Meyers.jpg">
+						</div>
+						<div class='tab' data-tab='b' style='display: none'>
+							<h2>Post Office/Student Center</h2>
+							<center><p>Location near Eagle's Nest entrance</p></center>
+							<img src="images/PostOffice.jpg">
+						</div>
+						<div class='tab' data-tab='c' style='display: none'>
+							<h2>Student Center Second Floor</h2>
+							<img src="images/StudentCenter2ndFloor.jpg">
+						</div>
+					</div>
+					
+					<!-- jQuery code to tie things all together -->
+					<script type='text/javascript'>
+						$(function(){
+							// When an open tab item from your menu is clicked
+							$(".open-tab").click(function(){
+								// Hide any of the content tabs
+								$(".tab").hide();
+								// Show your active tab (read from your data attribute)
+								$('[data-tab ="' + $(this).data('tab') + '"]').show();
+								// Optional: Highlight the selected tab
+								$('li.active').removeClass('active');
+								$(this).closest('li').addClass('active');
+							});
+						});
+					</script>
 				</article>
 			</aside>
 		</main>
