@@ -1,17 +1,64 @@
 main, section, aside, article, article>h2,
-article>p, article>img, article>a {
+article>p, article>img, article>a, h1 {
     padding: 0;
     margin: 0;
 }
 
+hr {
+    width: 97%;
+    margin: 4px 2% 10px .5%;
+}
 
-
-
-
-/*for testing*/
 section {
-    background-color: green;
+    display: block;
+    width: 64%;
+    margin-left: 1%;
+    margin-top: 8px;
+    float: left;
 }
 aside {
-    background-color: pink;
+    display: block;
+    width: 33%;
+    margin-right: 1%;
+    margin-top: 8px;
+    float: right;
 }
+
+article {
+    overflow: hidden;
+}
+section > article > h2 {
+    width: 96%;
+    color: rgb(243, 243, 220);
+    background-color: rgb(206, 103, 35);
+    font-size: 2em;
+    border-radius: 10px;
+    padding: 8px 10px;
+    margin-top: 6px;
+    border-style: outset;
+    border-color: sandybrown;
+}
+section > article > img {
+    display: block;
+    width: 40%;
+    float: left;
+    border-radius: 5px;
+    margin: 6px;
+}
+section > article > p {
+    display: block;
+    margin: 6px;
+    margin-right: 2.5%;
+}
+
+section > article > a {
+    margin: 6px;
+}
+
+
+
+
+/*for testing
+section {
+    background-color: green;
+}*/
