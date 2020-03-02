@@ -102,3 +102,7 @@ I also made one for my news page and got a start on it.
  have it's own body layout, we will continue to work and improve the layouts for each page individually
  
  Phil - added information to paper and edited metal tabs
+
+March 2 -
+
+ Kyle - Homepage Twitter Widget added
