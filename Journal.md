@@ -90,7 +90,9 @@ Feb 12 -
   modifications to the mock-up information page
   
   Feb 29- 
+  
   Phil - added cardboard tab and added information to plastic, cardboard and metal tabs. 
   
   Mar 1 - 
+  
   Phil - added information to paper and edited metal tabs
