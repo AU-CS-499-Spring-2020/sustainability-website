@@ -7,7 +7,24 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<title>Carbon Calculator - Sustainable Ashland</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="carbonStyle.css">
 		<link rel="icon" type="image/x-icon" href="icon.ico">
+
+		<!-- src="js/carbon.js" -->
+		<script type="text/javascript" >
+			function multiply(x, y) {
+				answer = x * y;
+				return answer;
+			}
+
+			function calculate() {
+	    		var num1 = document.getElementById("numberOfCommuters").value;
+        		var num2 = document.getElementById("averageNumberOfMiles").value;
+        		var result = document.getElementById("result");
+        		myResult = multiply(num1, num2);
+       			result.value = myResult;
+			}
+		</script>
     </head>
     <body>
         <!-- Header -->
@@ -32,17 +49,39 @@
 		<!-- Body -->
 		<br>
 		<main>
-			!!!Insert Your Code Here!!!
+			<form>
+				<input type="text" id="numberOfPeopleOnCampus" name="numberOfPeopleOnCampus">
+				<label for="numberOfPeopleOnCampusLabel"
+				>Number of People on Campus (faculty and students)</label><br>
+
+				<input type="text" id="zipCode" name="zipCode">
+				<label for="zipCodeLabel">Zip Code of Campus</label><br>
+
+				<input type="text" id="numberOfCommuters" name="numberOfCommutersText">
+				<label for="numberOfCommutersLabel">Number of Commuters</label> <br>
+
+				<input type="text" id="averageNumberOfMiles" name="averageNumberOfMilesText" value=100>
+				<label for="numberOfCommutersLabel">Average Miles Driven</label> <br>
+
+				<div style="text-align: center;">
+					<input type="button" onClick="calculate()" value="Submit">
+				</div>
+
+				<input type="text" id="result" name="result">
+				<label for="result">Result</label><br>
+			</form>
+			<!-- 
 			<section>
 				<article>
-					Example
+					Text
 				</article>
 			</section>
 			<aside>
 				<article>
-					Example
+					Text
 				</article>
 			</aside>
+			-->
 		</main>
 		<!-- Footer -->
 		<footer>

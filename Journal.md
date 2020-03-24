@@ -106,3 +106,9 @@ March 1 -
 March 2 -
 
  Kyle - Homepage Twitter Widget added
+
+March 24 -
+Eric - Started form for carbon footprint calculator
+	Begun adding textboxes
+	Added submit button
+	Started javascript

@@ -1,0 +1,41 @@
+main {
+
+}
+
+form {
+}
+
+label {
+	margin-left: 56%;
+	margin-right: -44%;
+}
+
+input[type=text] {
+	margin-left: 44.5%;
+	margin-right: -55.5%;
+}
+
+input[type=button] {
+	text-decoration: none;
+	padding: 15px 20px;
+	background-color: rgb(243, 243, 220);
+	color: rgb(161, 68, 24);
+	font-family: Arial;
+	font-size: 150%;
+	margin-left: 44.5%;
+	margin-right: -55.5%;
+	border-radius: 30px;
+	border: 2px solid rgb(161, 68, 24);
+	margin: 3px;
+}
+
+input[type=button].active {
+	background-color: rgb(255, 222, 172);
+	color: rgb(133, 56, 20);
+	border: 2px solid rgb(133, 56, 20);
+}
+
+input[type=button]:hover {
+	background-color: rgb(206, 103, 35);
+	color: rgb(243, 243, 220);
+}
