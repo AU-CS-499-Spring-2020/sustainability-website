@@ -7,24 +7,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<title>Carbon Calculator - Sustainable Ashland</title>
         <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" type="text/css" href="carbonStyle.css">
 		<link rel="icon" type="image/x-icon" href="icon.ico">
 
-		<!-- src="js/carbon.js" -->
-		<script type="text/javascript" >
-			function multiply(x, y) {
-				answer = x * y;
-				return answer;
-			}
+		<link rel="stylesheet" type="text/css" href="carbonStyle.css">
+		<script type="text/javascript" src="carbon.js"></script>
 
-			function calculate() {
-	    		var num1 = document.getElementById("numberOfCommuters").value;
-        		var num2 = document.getElementById("averageNumberOfMiles").value;
-        		var result = document.getElementById("result");
-        		myResult = multiply(num1, num2);
-       			result.value = myResult;
-			}
-		</script>
     </head>
     <body>
         <!-- Header -->
@@ -50,25 +37,64 @@
 		<br>
 		<main>
 			<form>
-				<input type="text" id="numberOfPeopleOnCampus" name="numberOfPeopleOnCampus">
-				<label for="numberOfPeopleOnCampusLabel"
-				>Number of People on Campus (faculty and students)</label><br>
+				<div people>
+					<topText> People </topText><br>
 
-				<input type="text" id="zipCode" name="zipCode">
-				<label for="zipCodeLabel">Zip Code of Campus</label><br>
+					<input type="text" id="numberOfStudentsOnCampus" name="numberOfStudentsOnCampus">
+					<label for="numberOfStudentsOnCampusLabel"
+					>Number of Students Living on Campus</label><br>
 
-				<input type="text" id="numberOfCommuters" name="numberOfCommutersText">
-				<label for="numberOfCommutersLabel">Number of Commuters</label> <br>
+					<input type="text" id="zipCode" name="zipCode">
+					<label for="zipCodeLabel">Zip Code of Campus</label><br>
 
-				<input type="text" id="averageNumberOfMiles" name="averageNumberOfMilesText" value=100>
-				<label for="numberOfCommutersLabel">Average Miles Driven</label> <br>
+					<input type="text" id="numberOfCommutersAndFaculty" name="numberOfCommutersAndFacultyText">
+					<label for="numberOfCommutersAndFacultyLabel">Number of Commuters and Faculty</label> <br>
 
-				<div style="text-align: center;">
-					<input type="button" onClick="calculate()" value="Submit">
+					<input type="text" id="averageNumberOfMiles" name="averageNumberOfMilesText" value=100>
+					<label for="numberOfCommutersLabel">Average Miles Driven for Commuters and Faculty</label> <br>
 				</div>
 
-				<input type="text" id="result" name="result">
-				<label for="result">Result</label><br>
+				<div powerUsage>
+					<topText> Power Usage </topText><br>
+
+					<input type="text" id="naturalGas" name="naturalGas">
+					<label for="naturalGasLabel">Natural Gas for Heat (in thousand cubic feet, per month)
+					</label><br>
+
+					<input type="text" id="kilowattHours" name="kilowattHours">
+					<label for="kilowattHoursLabel">Kilowatt Hours Used (per month)</label><br>
+
+					<input type="text" id="fuelOil" name="fuelOil">
+					<label for="fuelOilLabel">Fuel Oil Used (in gallons, per month)</label><br>
+
+					<input type="text" id="propane" name="propane">
+					<label for="propaneLabel">Propane Used (in gallons, per month)</label><br>
+				</div>
+
+				<div recycling>
+					<topText> Recycling </topText><br>
+
+					<input type="text" id="aluminum" name="aluminum">
+					<label for="aluminumLabel">Aluminum Recycled (in pounds, per month)</label><br>
+
+					<input type="text" id="plastic" name="plastic">
+					<label for="plasticLabel">Plastic Recycled (in pounds, per month)</label><br>
+
+					<input type="text" id="glass" name="glass">
+					<label for="glassLabel">Glass Recycled (in pounds, per month)</label><br>
+
+					<input type="text" id="paper" name="paper">
+					<label for="paperLabel">Paper Recycled (in pounds, per month)</label><br>
+				</div>
+
+				<div button>
+					<input type="button" onClick="calculate()" value="Submit"><br>
+				</div>
+
+				<div result>
+					<topText> Result </topText><br>
+					<input type="text" id="result" name="result">
+				</div>
 			</form>
 			<!-- 
 			<section>

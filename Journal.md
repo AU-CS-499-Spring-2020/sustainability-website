@@ -112,3 +112,8 @@ Eric - Started form for carbon footprint calculator
 	Begun adding textboxes
 	Added submit button
 	Started javascript
+
+April 2 -
+Eric - Nearly finished creating formulas
+	Finished adding text boxes
+	Added more CSS
