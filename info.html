@@ -7,24 +7,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<title>Information - Sustainable Ashland</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="homeStyle.css">
 		<link rel="icon" type="image/x-icon" href="icon.ico">
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		
-		<style type="text/css">
-			div {
-				display: none;
-				width: 100%;
-				height: auto;
-				background: transparent;
-				text-align: center;
-				padding-top: 5px;
-			}
-				
-			div.active {
-				display: block;
-			}
-		</style>
     </head>
     <body>
         <!-- Header -->
@@ -49,63 +35,81 @@
 		<!-- Body -->
 		<br>
 		<main>
-			<aside>
-				<article>
-					<nav role='navigation'>
-						<ul>
-							<li><a data-page="Plastic" href="#">Plastic</a></li>
-							<li><a data-page="Paper" href="#">Paper</a></li>
-							<li><a data-page="E-Waste" href="#">E-Waste</a></li>
-							<li><a data-page="Metal" href="#">Metal</a></li>
-							<li><a data-page="Test" href="#">Test</a></li>
-							<li><a data-page="Test" href="#">Test</a></li>
-							<li><a data-page="Test" href="#">Test</a></li>
-						</ul>
-					</nav>
-				</article>
-			</aside>
 			<section>
 				<article>
-					<div class="Plastic">
-						<h2>Plastic</h2>
+					<center>
+						<h1>Recycling Information</h1>
+						<!-- Example Navigation Bar -->
+						<nav class="navbar navbar-default" role="navigation">
+							<div class="navbar-collapse navbar-ex1-collapse">
+								<ul id="info" class="nav navbar-nav">
+								<!-- Notice each of these tab elements points to a certain ID -->
+									<li class='active'><a class='open-tab' href="#info" data-tab='a'>Plastic</a></li>
+									<li><a class='open-tab' href="#info" data-tab='b'>Paper</a></li>
+									<li><a class='open-tab' href="#info" data-tab='c'>E-Waste</a></li>
+									<li><a class='open-tab' href="#info" data-tab='d'>Metal</a></li>
+									<li><a class='open-tab' href="#info" data-tab='e'>Cardboard</a></li>
+								</ul>
+							</div>
+						</nav>
+						<div id='content'>
+							<!-- The data-tab attribute will be used by the tab that is clicked to identify the content to show -->
+							<div class='tab' data-tab='a'>
+								<h2>Plastic</h2>
+								<br>
+								<p>To tell if a plastic article can be recycled, just look for the looping arrows with a number in the middle.</p><br>
+								<p>If the number is a 1 or a 2, then it is easily recyclable and can be deposited in the bin. These are the most common types of plastic used.</p>
+							</div>
+							<div class='tab' data-tab='b' style='display: none'>
+								<h2>Paper</h2>
+								<br>
+								<p>Paper with ink and newspaper can be recycled in the appropiate paper bin. Recycling paper keeps the carbon trapped in the fibers from entering the atmosphere.</p>
+							</div>
+							<div class='tab' data-tab='c' style='display: none'>
+								<h2>E-Waste</h2>
+								<br>
+								<p>Bins are located on campus to recycle electronics. Raw materials such as gold and plastics can be recovered and reused.</p>
+							</div>
+							<div class='tab' data-tab='d' style='display: none'>
+								<h2>Metal</h2>
+								<br>
+								<p>Aluminum and tin cans are recyclable. It's not necessary to crush cans before recycling, but you are allowed to. Make sure to rinse out the can before depositing into the bin.</p>
+							</div>
+							<div class='tab' data-tab='e' style='display: none'>
+								<h2>Cardboard</h2>
+								<br>
+								<p>Cardbord products must be clean to be recycled. Wet, greasy, or waxed cardboard cannot be recycled. Just cut out the clean parts and recycle those.</p>
+							</div>
+						</div>
 						<br>
-						<p>To tell if a plastic article can be recycled just look for the looping arrows with a number in the middle. If the number is a 1 or a 2, then it is easily recyclable and can be deposited in the bin. 
-							These are the most common types of plastic used. </p>
-					</div>
-					<div class="Paper">
-						<h2>Paper</h2>
-						<br>
-						<p>Paper with ink and newspaper can be recycled in the appropiate paper bin. Recycling paper keeps the carbon trapped in the fibres from entering the atmosphere</p>
-					</div>
-					<div class="E-Waste">
-						<h2>E-Waste</h2>
-						<br>
-						<p>Bins are located on campus to recycle electronics. Raw materials and plastics can be recovered and reused.</p>
-					</div>
-					<div class="Metal">
-						<h2>Metal</h2>
-						<br>
-						<p>Aluminum and tin cans are recyclable. It's not necessary to crush cans before recycling, but you are allowed to. Make sure to rinse out the can before depositiing into the bin</p>
-					</div>
-					<div class="Cardboard">
-						<h2>Test</h2>
-						<br>
-						<p>Cardbord products must be clean to be recycled. Wet, greasy, or waxed cardboard cannot
-						be recycled. Just cut out the clean parts and recycle those.</p>
-					</div>
+						<!-- jQuery code to tie things all together -->
+						<script type='text/javascript'>
+							$(function(){
+								// When an open tab item from your menu is clicked
+								$(".open-tab").click(function(){
+									// Hide any of the content tabs
+									$(".tab").hide();
+									// Show your active tab (read from your data attribute)
+									$('[data-tab ="' + $(this).data('tab') + '"]').show();
+									// Optional: Highlight the selected tab
+									$('li.active').removeClass('active');
+									$(this).closest('li').addClass('active');
+								});
+							});
+						</script>
+					</center>
 				</article>
-				<script>
-					var page;
-					$(
-						$("nav li a").hover(function() {
-							page = "."+$(this).data("page");
-						$(page).addClass("active")
-						}, function() {
-							$(page).removeClass("active");
-						})
-					)
-				</script>
 			</section>
+			<aside>
+				<center>
+					<h2>More Recycling Information</h2><br>
+					<br>
+					<a href="https://www.epa.gov/recycle/recycling-basics" target="_blank">www.epa.gov/recycle/recycling-basics</a><br>
+					<br>
+					<a href="https://www.epa.gov/sites/production/files/2019-11/documents/msw_infographic_with_2017_data_nov._2019.pdf" target="_blank"><img src="https://www.epa.gov/sites/production/files/styles/large/public/2019-11/msw_infographic_section.jpg"></a><br>
+					<br>
+				</center>
+			</aside>
 		</main>
 		<!-- Footer -->
 		<footer>
