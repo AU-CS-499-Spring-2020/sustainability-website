@@ -1,9 +1,3 @@
-main, section, aside, article, h2,
-p, img, article>a, h1, div {
-    padding: 0px;
-    margin: 0px;
-}
-
 /*dropdown stuff starts here*/
 #navbar {
     display: none;
@@ -58,31 +52,3 @@ p, img, article>a, h1, div {
 }
 
 /*dropdown stuff ends here*/
-
-section {
-    margin: auto;
-    float: none;
-    width: 96%;
-}
-aside {
-    float: none;
-    width: 96%;
-    margin: auto;
-}
-
-aside > h1 {
-    text-align: center;
-}
-
-h2 {
-    text-align: center;
-}
-
-div.imgContain {
-    width: 100%;
-    margin: auto;
-    height: 300px;
-}
-div.imgContain > img{
-    width: 100%;
-}

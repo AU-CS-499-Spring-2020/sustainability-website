@@ -1,3 +1,7 @@
+#dropdown {
+    display: none;
+}
+
 section {
 	float: left;
 	margin: 0 1%;
