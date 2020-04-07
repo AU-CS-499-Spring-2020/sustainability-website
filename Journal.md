@@ -131,3 +131,4 @@ Ben - Finished making mobile version of news page
 	Made drop-down nav menu to replace nav bar on mobile version of page
 	Applied drop-down nav menu for home page
 Kyle - Minor code cleanup for mobile dropdown
+	Removed unneeded CSS file for contest page and implemented dropdown hiding CSS directly in contest HTML page
