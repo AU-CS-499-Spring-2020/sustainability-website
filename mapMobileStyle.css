@@ -1,0 +1,58 @@
+/*dropdown stuff starts here*/
+#navbar {
+    display: none;
+}
+#aulogo {
+    display: none;
+}
+
+#map {
+    z-index: 1;
+}
+
+#dropdown {
+    font-size: 160%;
+    padding: 12px;
+    width: 32%;
+    box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.50);
+    border-radius: 10px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 6px;
+    text-align: center;
+    background-color: rgb(255, 238, 212);
+	color: rgb(161, 68, 24);
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    margin-top: 12px;
+    background-color: rgb(255, 255, 241);
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,1);
+    z-index: 2;
+}
+.dropdown-content > a {
+    width: 100%;
+    float: left;
+    padding: 8px;
+    text-align: center;
+    background-color: rgb(255, 255, 241);
+	color: rgb(161, 68, 24);
+    
+}
+.dropdown-content > a.active {
+    background-color: rgb(255, 222, 172);
+	color: rgb(133, 56, 20);
+}
+.dropdown-content > a:hover {
+    background-color: rgb(206, 103, 35);
+    color: rgb(255, 255, 241);
+}
+  
+#dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*dropdown stuff ends here*/
