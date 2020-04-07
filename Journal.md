@@ -124,6 +124,7 @@ April 6 -
 Ben - Updated a few aesthetics
 	Finished news page
 	Worked on making news page more mobile friendly
+Kyle - Updates, more information, and reoganization of layout/design for Information page and About/Contact Us pages
 	
 April 7 -
 Ben - Finished making mobile version of news page
