@@ -112,8 +112,20 @@ Eric - Started form for carbon footprint calculator
 	Begun adding textboxes
 	Added submit button
 	Started javascript
+	
+Ben - Started Java program for updating news page
 
 April 2 -
 Eric - Nearly finished creating formulas
 	Finished adding text boxes
 	Added more CSS
+	
+April 6 -
+Ben - Updated a few aesthetics
+	Finished news page
+	Worked on making news page more mobile friendly
+	
+April 7 -
+Ben - Finished making mobile version of news page
+	Made drop-down nav menu to replace nav bar on mobile version of page
+	Applied drop-down nav menu for home page
