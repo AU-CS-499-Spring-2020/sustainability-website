@@ -130,3 +130,4 @@ April 7 -
 Ben - Finished making mobile version of news page
 	Made drop-down nav menu to replace nav bar on mobile version of page
 	Applied drop-down nav menu for home page
+Kyle - Minor code cleanup for mobile dropdown
