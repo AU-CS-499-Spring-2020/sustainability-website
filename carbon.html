@@ -36,9 +36,15 @@
 		<!-- Body -->
 		<br>
 		<main>
+			<div class="explanationText">
+				<p> This is a carbon footprint calculator designed to analyze the carbon emissions of college campuses. </p> <br>
+				<p> Input the information in each text field and click submit to see the carbon footprint your campus has. </p> 
+			</div>
+
 			<form>
-				<div people>
-					<topText> People </topText><br>
+
+				<div class="gridItem people">
+					<div class="topText"> People </div>
 
 					<input type="text" id="numberOfStudentsOnCampus" name="numberOfStudentsOnCampus">
 					<label for="numberOfStudentsOnCampusLabel"
@@ -50,12 +56,13 @@
 					<input type="text" id="numberOfCommutersAndFaculty" name="numberOfCommutersAndFacultyText">
 					<label for="numberOfCommutersAndFacultyLabel">Number of Commuters and Faculty</label> <br>
 
-					<input type="text" id="averageNumberOfMiles" name="averageNumberOfMilesText" value=100>
-					<label for="numberOfCommutersLabel">Average Miles Driven for Commuters and Faculty</label> <br>
+					<input type="text" id="averageNumberOfMiles" name="averageNumberOfMilesText">
+					<label for="numberOfCommutersLabel">Average Miles Driven for Commuters and Faculty per day
+					</label> <br>
 				</div>
 
-				<div powerUsage>
-					<topText> Power Usage </topText><br>
+				<div class="gridItem powerUsage">
+					<div class="topText"> Power Usage </div>
 
 					<input type="text" id="naturalGas" name="naturalGas">
 					<label for="naturalGasLabel">Natural Gas for Heat (in thousand cubic feet, per month)
@@ -71,8 +78,8 @@
 					<label for="propaneLabel">Propane Used (in gallons, per month)</label><br>
 				</div>
 
-				<div recycling>
-					<topText> Recycling </topText><br>
+				<div class="gridItem recycling">
+					<div class="topText"> Recycling </div>
 
 					<input type="text" id="aluminum" name="aluminum">
 					<label for="aluminumLabel">Aluminum Recycled (in pounds, per month)</label><br>
@@ -87,14 +94,17 @@
 					<label for="paperLabel">Paper Recycled (in pounds, per month)</label><br>
 				</div>
 
-				<div button>
-					<input type="button" onClick="calculate()" value="Submit"><br>
+				<div class="gridItem buttonAndResult">
+					<div class="button">
+						<input type="button" onClick="calculate()" value="Submit">
+					</div>
+
+					<div class="result">
+						<div class="resultText"> Result </div>
+						<input type="text" id="result" name="result">
+					</div>
 				</div>
 
-				<div result>
-					<topText> Result </topText><br>
-					<input type="text" id="result" name="result">
-				</div>
 			</form>
 			<!-- 
 			<section>
