@@ -8,18 +8,19 @@
 		<title>About Us - Sustainable Ashland</title>
         <link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="stylesheet" type="text/css" href="homeStyle.css">
+		<link rel="stylesheet" type="text/css" media="screen and (max-width: 800px)" href='aboutMobileStyle.css' />
 		<link rel="icon" type="image/x-icon" href="icon.ico">
     </head>
     <body>
 		<!-- Header -->
 		<header>
 			<a href="index.html"><img src="HeaderLogo.png"></a>
-			<a href="http://ashland.edu" target="_blank"><img src="logo.png"></a>
+			<a id="aulogo"href="http://ashland.edu" target="_blank"><img src="logo.png"></a>
 		</header>
 		
 		
 		<!-- Menu Bar -->
-		<nav>
+		<nav id="navbar">
 			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="map.html">Map</a></li>
@@ -30,6 +31,23 @@
 				<li><a class="active" href="about.html">Contact Us</a></li>
 			</ul>
 		</nav>
+
+		<!--Drop-down Menu-->
+		<div id="dropdown">
+			<span>Home</span>
+			<div class="dropdown-content">
+				<a href="index.html">Home</a>
+				<a href="news.html">News</a>
+				<a href="map.html">Map</a>
+				<a href="contest.html">Contest</a>
+				<a href="info.html">Information</a>
+				<a href="carbon.html">Carbon Calculator</a>
+				<a class="active" href="about.html">Contact Us</a>
+			</div>
+		  </div>
+
+
+		
 		<!-- Body -->
 		<br>
 		<center>
