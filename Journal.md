@@ -134,3 +134,4 @@ Ben - Finished making mobile version of news page
 Kyle - Minor code cleanup for mobile dropdown
 	Removed unneeded CSS file for contest page and implemented dropdown hiding CSS directly in contest HTML page
 	Updates to layout of About/Contact Us page
+	Fixed information page plastic recycling number image display size
