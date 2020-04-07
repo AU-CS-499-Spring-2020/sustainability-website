@@ -4,6 +4,10 @@ article>p, article>img, article>a, h1 {
     margin: 0;
 }
 
+#dropdown {
+    display: none;
+}
+
 h2, h1 {
     font-family: serif;
 }
@@ -19,7 +23,6 @@ hr.featLine {
     margin: 2px 0px 20px 0px;
     border: 1px solid rgba(56, 83, 76, 0.3);
 }
-
 section {
     display: block;
     width: 67%;
