@@ -125,6 +125,7 @@ Ben - Updated a few aesthetics
 	Finished news page
 	Worked on making news page more mobile friendly
 Kyle - Updates, more information, and reoganization of layout/design for Information page and About/Contact Us pages
+	Backend updates
 	
 April 7 -
 Ben - Finished making mobile version of news page
@@ -132,3 +133,4 @@ Ben - Finished making mobile version of news page
 	Applied drop-down nav menu for home page
 Kyle - Minor code cleanup for mobile dropdown
 	Removed unneeded CSS file for contest page and implemented dropdown hiding CSS directly in contest HTML page
+	Updates to layout of About/Contact Us page
