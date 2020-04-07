@@ -8,19 +8,19 @@
 		<title>News - Sustainable Ashland</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="stylesheet" type="text/css" href="newsStyle.css">
-		<link rel="stylesheet" type="text/css" media="screen and (max-width: 1118px)" href='newsMobileStyle.css' />
+		<link rel="stylesheet" type="text/css" media="screen and (max-width: 800px)" href='newsMobileStyle.css' />
 		<link rel="icon" type="image/x-icon" href="icon.ico">
     </head>
     <body>
 		<!-- Header -->
 		<header>
 			<a href="index.html"><img src="HeaderLogo.png"></a>
-			<a href="http://ashland.edu" target="_blank"><img src="logo.png"></a>
+			<a id="aulogo" href="http://ashland.edu" target="_blank"><img src="logo.png"></a>
 		</header>
 		
 		
 		<!-- Menu Bar -->
-		<nav>
+		<nav id="navbar">
 			<ul> <!--Suggested Order: Home - Contest - News - Info - Calculator - Map - Contact-->
 				<li><a href="index.html">Home</a></li>
 				<li><a href="map.html">Map</a></li>
@@ -31,9 +31,59 @@
 				<li><a href="about.html">Contact Us</a></li>
 			</ul>
 		</nav>
+
+		<!--Drop-down Menu-->
+		<div id="dropdown">
+			<span>News</span>
+			<div class="dropdown-content">
+				<a href="index.html">Home</a>
+				<a class="active" href="news.html">News</a>
+				<a href="map.html">Map</a>
+				<a href="contest.html">Contest</a>
+				<a href="info.html">Information</a>
+				<a href="carbon.html">Carbon Calculator</a>
+				<a href="about.html">Contact Us</a>
+			</div>
+		  </div>
+
+
 		<!-- Body -->
 		<br>
 		<main>
+
+			<section>
+				<article> <!--Each article will include:Title & paragraph & image. May include: url link-->
+					<h2>A Company Went Green!</h2>
+					<hr>
+					<div class="imgContain"><img src="sustain.jpg"></div>
+					<p>Hello friends,<br/>We've had a lot of example news articles lately. Isn't that just great?
+						Oh... wait never mind this is the first one. Well, whatever. Guess what! This comapny went green!
+						Time to chant yay many MANY times in a row! Yay yay yay yay yay yay yay yay yay yay!</p>
+				</article>
+				<div class="postFoot"><a href="http://ashland.edu">http://url-of-news-article.com</a>
+					<p class="date">April 6, 2020</p></div>
+
+				<article>
+					<h2>Group of High Schoolers Volunteer to Fish Garbage from Rivers</h2>
+					<hr>
+					<div class="imgContain"><img src="sustain-cup.jpg"></div>
+					<p>Hello friends,<br/>We've had a lot of example news articles lately. Isn't that just great?
+						Oh... wait never mind this is the first one. Well, whatever. Guess what! This comapny went green!
+						Time to chant yay many MANY times in a row! Yay yay yay yay yay yay yay yay yay yay!</p>
+				</article>
+				<div class="postFoot"><a href="http://ashland.edu">http://url-of-high-schoolers-article.com</a><p class="date">April 4, 2020</p></div>
+
+				<article>
+					<h2>Earth Day is Coming Up! Remember to Take Care of Our Planet!</h2>
+					<hr>
+					<div class="imgContain"><img src="EarthDay.png"></div>
+					<p>Hello friends,<br/>We've had a lot of example news articles lately. Isn't that just great?
+						Oh... wait never mind this is the first one. Well, whatever. Guess what! This comapny went green!
+						Time to chant yay many MANY times in a row! Yay yay yay yay yay yay yay yay yay yay!</p>
+				</article>
+				<div class="postFoot"><p class="date">April 1, 2020</p></div>
+
+			</section>
 
 			<aside>
 				<h1>Featured News</h1>
@@ -61,40 +111,6 @@
 				</article>
 				<hr class="featLine">
 			</aside>
-
-			<section>
-				<article> <!--Each article will include:Title & paragraph. May include: image & url link-->
-					<h2>Example News Update Title/Header(Includes image and link)</h2>
-					<hr>
-					<div class="imgContain"><img src="sustain.jpg"></div>
-					<p>Hello friends,<br/>We've had a lot of example news articles lately. Isn't that just great?
-						Oh... wait never mind this is the first one. Well, whatever. Guess what! This comapny went green!
-						Time to chant yay many MANY times in a row! Yay yay yay yay yay yay yay yay yay yay!</p>
-				</article>
-				<div class="postFoot"><a href="http://ashland.edu">http://url-of-thing-related-to-post.com</a>
-					<p class="date">April 6, 2020</p></div>
-
-				<article>
-					<h2>Example News Update Title/Header(Includes image but no link)</h2>
-					<hr>
-					<div class="imgContain"><img src="sustain-cup.jpg"></div>
-					<p>Hello friends,<br/>We've had a lot of example news articles lately. Isn't that just great?
-						Oh... wait never mind this is the first one. Well, whatever. Guess what! This comapny went green!
-						Time to chant yay many MANY times in a row! Yay yay yay yay yay yay yay yay yay yay!</p>
-				</article>
-				<div class="postFoot"><a href="http://ashland.edu">http://url-of-thing-related-to-post.com</a><p class="date">April 4, 2020</p></div>
-
-				<article>
-					<h2>Example News Update Title/Header(Includes link but no image)</h2>
-					<hr>
-					<div class="imgContain"><img src="icon.png"></div>
-					<p>Hello friends,<br/>We've had a lot of example news articles lately. Isn't that just great?
-						Oh... wait never mind this is the first one. Well, whatever. Guess what! This comapny went green!
-						Time to chant yay many MANY times in a row! Yay yay yay yay yay yay yay yay yay yay!</p>
-				</article>
-				<div class="postFoot"><a href="http://ashland.edu">http://url-of-thing-related-to-post.com</a><p class="date">April 1, 2020</p></div>
-
-			</section>
 			
 		</main>
 		<!-- Footer -->
