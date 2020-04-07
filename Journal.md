@@ -136,3 +136,4 @@ Kyle - Minor code cleanup for mobile dropdown
 	Updates to layout of About/Contact Us page
 	Fixed information page plastic recycling number image display size
 	Remove broken stylesheet link in Contest page HTML
+	Added source below image on Information page with included link
