@@ -67,14 +67,11 @@
 					<label for="numberOfStudentsOnCampusLabel"
 					>Number of Students Living on Campus</label><br>
 
-					<input type="text" id="zipCode" name="zipCode">
-					<label for="zipCodeLabel">Zip Code of Campus</label><br>
-
 					<input type="text" id="numberOfCommutersAndFaculty" name="numberOfCommutersAndFacultyText">
 					<label for="numberOfCommutersAndFacultyLabel">Number of Commuters and Faculty</label> <br>
 
 					<input type="text" id="averageNumberOfMiles" name="averageNumberOfMilesText">
-					<label for="numberOfCommutersLabel">Average Miles Driven for Commuters and Faculty per day
+					<label for="numberOfCommutersLabel">Avrg. Miles Driven for Commuters and Faculty per week
 					</label> <br>
 				</div>
 
@@ -98,27 +95,39 @@
 				<div class="gridItem recycling">
 					<div class="topText"> Recycling </div>
 
-					<input type="text" id="aluminum" name="aluminum">
-					<label for="aluminumLabel">Aluminum Recycled (in pounds, per month)</label><br>
+					<div class="recyclingElements">
+						<div>
+							<p> Do you recycle... </p>
+							<input type="checkbox" id="aluminum" name="aluminum">
+							<label for="aluminumLabel">Aluminum </label><br>
 
-					<input type="text" id="plastic" name="plastic">
-					<label for="plasticLabel">Plastic Recycled (in pounds, per month)</label><br>
+							<input type="checkbox" id="plastic" name="plastic">
+							<label for="plasticLabel">Plastic </label><br>
 
-					<input type="text" id="glass" name="glass">
-					<label for="glassLabel">Glass Recycled (in pounds, per month)</label><br>
+							<input type="checkbox" id="glass" name="glass">
+							<label for="glassLabel">Glass </label><br>
 
-					<input type="text" id="paper" name="paper">
-					<label for="paperLabel">Paper Recycled (in pounds, per month)</label><br>
+							<input type="checkbox" id="paper" name="paper">
+							<label for="paperLabel">Paper </label><br>
+						</div>
+
+						<div>
+							<input type="text" id="percentRecycled" name="percentRecycled">
+							<p> Percent of recycled <br> materials from <br> total waste </p>
+						</div>
+					</div>
+
 				</div>
 
 				<div class="gridItem buttonAndResult">
 					<div class="button">
-						<input type="button" onClick="calculate()" value="Submit">
+						<input type="button" onClick="calculateEmissions()" value="Submit">
 					</div>
 
 					<div class="result">
 						<div class="resultText"> Result </div>
-						<input type="text" id="result" name="result">
+						<input type="text" id="result" name="result"> <br>
+						<div> pounds of CO2 emitted per year </div>
 					</div>
 				</div>
 

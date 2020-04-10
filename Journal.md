@@ -137,3 +137,13 @@ Kyle - Minor code cleanup for mobile dropdown
 	Fixed information page plastic recycling number image display size
 	Remove broken stylesheet link in Contest page HTML
 	Added source below image on Information page with included link
+Eric - Finished formulas
+	Made text boxes look nicer
+	Added explanation text for calculator
+Whole group -
+	Had a practice presentation over Zoom for the presentation the next day
+
+April 10-
+Eric - Implemented all the JS
+	Changed "Recycling" text boxes to check boxes
+	Removed unnecessary "zip code" text box
