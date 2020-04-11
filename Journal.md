@@ -142,8 +142,15 @@ Eric - Finished formulas
 	Added explanation text for calculator
 Whole group -
 	Had a practice presentation over Zoom for the presentation the next day
+	
+April 8 -
+Ben - Emailed Facilities for details about recycling locations. Got a response saying they'd compile and provide the list in a couple days.
 
 April 10-
 Eric - Implemented all the JS
 	Changed "Recycling" text boxes to check boxes
 	Removed unnecessary "zip code" text box
+	
+April 11-
+Ben - Linked map markers to div elements containing specific location info. Removed buttons in right column.
+	Added tool tip to each map marker containing location name.
