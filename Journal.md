@@ -126,6 +126,7 @@ Ben - Updated a few aesthetics
 	Worked on making news page more mobile friendly
 Kyle - Updates, more information, and reoganization of layout/design for Information page and About/Contact Us pages
 	Backend updates
+Phil - Added image for plastic numbers
 	
 April 7 -
 Ben - Finished making mobile version of news page
@@ -157,3 +158,5 @@ Ben - Linked map markers to div elements containing specific location info. Remo
 	
 April 13 -
 Kyle - Added many new location information updates to map page from list obtained from Facilities
+
+Phil - Added image showing the paper recycling process
