@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<title>Information - Sustainable Ashland</title>
         <link rel="stylesheet" type="text/css" href="style.css">
-		<link rel="stylesheet" type="text/css" href="homeStyle.css">
+		<link rel="stylesheet" type="text/css" href="infoStyle.css">
 		<link rel="stylesheet" type="text/css" media="screen and (max-width: 800px)" href='infoMobileStyle.css' />
 		<link rel="icon" type="image/x-icon" href="icon.ico">
 		
@@ -51,77 +51,119 @@
 		<br>
 		<main>
 			<section>
-				<article>
-					<center>
-						<h1>Recycling Information</h1>
-						<!-- Example Navigation Bar -->
-						<nav class="navbar navbar-default" role="navigation">
-							<div class="navbar-collapse navbar-ex1-collapse">
-								<ul id="info" class="nav navbar-nav">
-								<!-- Notice each of these tab elements points to a certain ID -->
-									<li class='active'><a class='open-tab' href="#info" data-tab='a'>Plastic</a></li>
-									<li><a class='open-tab' href="#info" data-tab='b'>Paper</a></li>
-									<li><a class='open-tab' href="#info" data-tab='c'>E-Waste</a></li>
-									<li><a class='open-tab' href="#info" data-tab='d'>Metal</a></li>
-									<li><a class='open-tab' href="#info" data-tab='e'>Cardboard</a></li>
-								</ul>
-							</div>
-						</nav>
-						<div id='content'>
-							<!-- The data-tab attribute will be used by the tab that is clicked to identify the content to show -->
-							<div class='tab' data-tab='a'>
-								<h2>Plastic</h2>
-								<br>
-								<p>To tell if a plastic article can be recycled, just look for the looping arrows with a number in the middle.</p><br>
-								<p>If the number is a 1 or a 2, then it is easily recyclable and can be deposited in the bin. Plastics numbered up to 7 are recyclable. Plastics numbered with a 2 in the middle are the most common types of plastic used. You do not have to remove labels from plastic bottles.</p><br>
-								<img src="https://earth911.com/wp-content/uploads/2010/05/recycle-number-symbols.png" alt= "Plastic Recycling Numbers"><br>
-								<small>Source:<a href="https://earth911.com" target="_blank">earth911.com</a></small>
-							</div>
-							<div class='tab' data-tab='b' style='display: none'>
-								<h2>Paper</h2>
-								<br>
-								<p>Paper with ink and newspaper can be recycled in the appropiate paper bin. Recycling paper keeps the carbon trapped in the fibers from entering the atmosphere. Thus lowering the amount of green house gases in the environment and saves trees</p><p> 
-								<img src="https://slideplayer.com/slide/4428663/14/images/12/What+is+a+Product+Life+Cycle.jpg" alt="Paper Recycling Process"></p>
-							</div>
-							<div class='tab' data-tab='c' style='display: none'>
-								<h2>E-Waste</h2>
-								<br>
-								<p>Bins are located on campus to recycle electronics. Raw materials such as gold and plastics can be recovered and reused.</p>
-							</div>
-							<div class='tab' data-tab='d' style='display: none'>
-								<h2>Metal</h2>
-								<br>
-								<p>Aluminum and tin cans are recyclable. It's not necessary to crush cans before recycling, but you are allowed to. Make sure to rinse out the can before depositing into the bin. Aerosol cans may be recycled if they are empty.</p>
-							</div>
-							<div class='tab' data-tab='e' style='display: none'>
-								<h2>Cardboard</h2>
-								<br>
-								<p>Cardbord products must be clean to be recycled. Wet, greasy, or waxed cardboard cannot be recycled. Just cut out the clean parts and recycle those.</p>
-							</div>
-						</div>
-						<br>
-						<!-- jQuery code to tie things all together -->
-						<script type='text/javascript'>
-							$(function(){
-								// When an open tab item from your menu is clicked
-								$(".open-tab").click(function(){
-									// Hide any of the content tabs
-									$(".tab").hide();
-									// Show your active tab (read from your data attribute)
-									$('[data-tab ="' + $(this).data('tab') + '"]').show();
-									// Optional: Highlight the selected tab
-									$('li.active').removeClass('active');
-									$(this).closest('li').addClass('active');
-								});
-							});
-						</script>
-					</center>
-				</article>
+				<div id="links">
+					<div class="linkCat">
+						<a class="headLink" href="#recyce">Recycling</a>
+						<a class="il" href="#recBen">Benefits</a>
+						<a class="il" href="#plastic">Plastic</a>
+						<a class="il" href="#paper">Paper</a>
+						<a class="il" href="#ewaste">E-Waste</a>
+						<a class="il" href="#metal">Metal</a>
+						<a class="il" href="#cardboard">Cardboard</a>
+					</div>
+					<div class="linkCat">
+						<a class="headLink" href="#reduceuse">Reduce & Reuse</a>
+						<a class="il" href="#greenHome">Green Home</a>
+						<a class="il" href="#greenHabit">Green Habits</a>
+						<a class="il" href="#foodWaste">Food Waste</a>
+						<a class="il" href="#minimal">Minimalism</a>
+					</div>
+					<div class="linkCat">
+						<a class="headLink" href="#sustainEnergy">Sustainable Energy</a>
+						<a class="il" href="#windmills">Windmills</a>
+						<a class="il" href="#solPan">Solar Panels</a>
+					</div>
+					<div class="linkCat">
+						<a class="headLink" href="#stats">Statistics</a>
+						<a class="il" href="#waste">Waste Stats</a>
+						<a class="il" href="#positive">Positive Impact</a>
+						<a class="il" href="#jobs">Economic Benefits</a>
+					</div>
+				</div>
+
+				<div id="recycle" class="infoSec">
+					<h1>Recycling</h1>
+					<hr>
+					<h2 id="recBen">Benefits of Recycling</h2>
+					<p>Content...Information...all that</p>
+					<hr>
+					<h2 id="plastic">Plastic</h2>
+					<p>To tell if a plastic article can be recycled, just look for the looping arrows
+						with a number in the middle.</br></br>If the number is a 1 or a 2, then it
+						is easily recyclable and can be deposited in the bin. Plastics numbered up to
+						7 are recyclable. Plastics numbered with a 2 in the middle are the most common
+						types of plastic used. You do not have to remove labels from plastic bottles.</p>
+						<img src="astm_resin_codes.jpg">
+					<hr>
+					<h2 id="paper">Paper</h2>
+					<p>Paper with ink and newspaper can be recycled in the appropiate paper bin.
+						Recycling paper keeps the carbon trapped in the fibers from entering the
+						atmosphere. Thus lowering the amount of green house gases in the environment
+						and saves trees</p>
+						<img src="https://slideplayer.com/slide/4428663/14/images/12/What+is+a+Product+Life+Cycle.jpg" alt="Paper Recycling Process">
+					<hr>
+					<h2 id="ewaste">Electronic Waste</h2>
+					<p>Bins are located on campus to recycle electronics. Raw materials such as
+						gold and plastics can be recovered and reused.</p>
+					<hr>
+					<h2 id="metal">Metal</h2>
+					<p>Aluminum and tin cans are recyclable. It's not necessary to crush cans before
+						recycling, but you are allowed to. Make sure to rinse out the can before
+						depositing into the bin. Aerosol cans may be recycled if they are empty.</p>
+					<hr>
+					<h2 id="cardboard">Cardboard</h2>
+					<p>Cardbord products must be clean to be recycled. Wet, greasy, or waxed cardboard
+						cannot be recycled. Just cut out the clean parts and recycle those.</p>
+					<hr>
+				</div>
+
+				<div id="reduceuse" class="infoSec">
+					<h1>Reduce & Reuse</h1>
+					<hr>
+					<h2 id="greenHome">Having A Green Home</h2>
+					<p>Content...Information...all that</p>
+					<hr>
+					<h2 id="greenHabit">Develop Green Habits</h2>
+					<p>Content...Information...all that</p>
+					<hr>
+					<h2 id="foodWaste">Reduce Food Waste</h2>
+					<p>Content...Information...all that</p>
+					<hr>
+					<h2 id="minimal">Minimalistic Living</h2>
+					<p>Content...Information...all that</p>
+					<hr>
+				</div>
+
+				<div id="sustainEnergy" class="infoSec">
+					<h1>Sustainable Energy</h1>
+					<hr>
+					<h2 id="windmills">Windmills</h2>
+					<p>Content...Information...all that</p>
+					<hr>
+					<h2 id="solPan">Solar Panels</h2>
+					<p>Content...Information...all that</p>
+				</div>
+
+				<div id="stats" class="infoSec">
+					<h1>Statistics</h1>
+					<hr>
+					<h2 id="waste">Waste Statistics</h2>
+					<p>Content...Information...all that</p>
+					<hr>
+					<h2 id="positive">Positive Impact</h2>
+					<p>Content...Information...all that</p>
+					<hr>
+					<h2 id="jobs">Benefit to the Economy</h2>
+					<p>Blah blah has created jobs and such!</p>
+					<hr>
+				</div>
+
+				<a id="btt" href="#aulogo">Back to Top</a>
 			</section>
 			<aside>
 				<center>
 					<img src="https://www.epa.gov/sites/production/files/styles/large/public/2013-06/recycling-symbol.gif">
-					<h2>More Recycling Information</h2>
+					<h2>More Sustainable Information</h2>
 					<a href="https://www.epa.gov/recycle" target="_blank">EPA: Reduce, Reuse, Recycle</a><br>
 					<br>
 					<a href="https://www.epa.gov/recycle/recycling-basics" target="_blank">EPA: Recycling Basics</a><br>

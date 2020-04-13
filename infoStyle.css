@@ -1,0 +1,76 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+#dropdown {
+    display: none;
+}
+
+.infoSec {
+    width: 100%;
+    float: left;
+}
+
+section {
+    width: 60%;
+    float: left;
+    margin: 10px 1% 10px 1%;
+}
+
+aside {
+    width: 36%;
+    float: right;
+    margin: 10px 1% 10px 1%;
+}
+
+#links {
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.il {
+    width: 90%;
+    float: left;
+    padding: 8px 0px 8px 0px;
+    text-align: center;
+    /*box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.50);*/
+	color: rgb(161, 68, 24);
+}
+.headLink {
+    font-size: 140%;
+    text-decoration: underline;
+    width: 90%;
+    float: left;
+    text-align: center;
+    padding: 8px 0px 4px 0px;
+    color: rgb(161, 68, 24);
+    /*box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.50);*/
+}
+
+.headLink:hover, .il:hover {
+    color: rgb(0, 173, 226);
+    box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.linkCat {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 250px;
+}
+
+#btt {
+    position: fixed;
+    bottom: -20px;
+    right: 4%;
+    z-index: 2;
+    background-color: rgb(161, 68, 24);
+    color: rgb(255, 255, 241);
+    padding: 10px;
+    padding-bottom: 30px;
+    border-radius: 15px;
+    font-size: 120%;
+}
