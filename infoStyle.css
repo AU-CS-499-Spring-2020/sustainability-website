@@ -31,17 +31,18 @@ aside {
 }
 
 .il {
-    width: 90%;
+    width: 100%;
     float: left;
-    padding: 8px 0px 8px 0px;
+    padding: 6px 0px 6px 0px;
     text-align: center;
     /*box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.50);*/
-	color: rgb(161, 68, 24);
+    color: rgb(161, 68, 24);
+    font-size: 110%;
 }
 .headLink {
     font-size: 140%;
     text-decoration: underline;
-    width: 90%;
+    width: 100%;
     float: left;
     text-align: center;
     padding: 8px 0px 4px 0px;
@@ -58,8 +59,12 @@ aside {
 .linkCat {
     display: block;
     float: left;
-    width: 50%;
-    height: 250px;
+    width: 45%;
+    height: 234px;
+    margin: 6px;
+    border: 3px solid rgb(133, 102, 67);
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 #btt {
@@ -73,4 +78,31 @@ aside {
     padding-bottom: 30px;
     border-radius: 15px;
     font-size: 120%;
+}
+
+#btt:hover {
+    color: rgb(211, 211, 199);
+    box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+hr {
+    margin: 0px 2% 4px .5%;
+    border: 1px solid rgba(109, 109, 109, 0.60);
+}
+
+h1 {
+    text-align: center;
+    font-family: serif;
+    font-size: 350%;
+    color: rgb(133, 102, 67);
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 180%;
+    padding: 6px 1% 6px 1%;
+}
+
+p {
+    padding: 6px 1% 6px 1%;
 }

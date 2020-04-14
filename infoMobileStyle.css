@@ -50,5 +50,17 @@
 #dropdown:hover .dropdown-content {
     display: block;
 }
-
 /*dropdown stuff ends here*/
+
+.linkCat {
+    display: block;
+    float: left;
+    width: 98%;
+    height: 234px;
+    margin: 0;
+    margin-top: 3px;
+}
+
+section {
+    width: 100%;
+}
