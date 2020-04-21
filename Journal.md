@@ -160,3 +160,13 @@ April 13 -
 Kyle - Added many new location information updates to map page from list obtained from Facilities
 
 Phil - Added image showing the paper recycling process
+
+April 14-
+	Group met to practice URCA presentation
+
+April 21 -
+	Eric - Made fonts bigger
+	Changed calculator "submit" button
+	Created mobile version of calculator
+	Fixed centering issues on some devices
+	Added input validation and default values into JS

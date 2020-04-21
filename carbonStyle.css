@@ -4,13 +4,12 @@
 }
 
 form {
-	display: inline-grid;
-	margin-left: 3%;
-	margin-top: 1.5%;
-	margin-bottom: 2%;
+	display: grid;
+	margin: 1%;
 	grid-template-columns: auto auto;
 	grid-template-rows: auto auto;
 	grid-gap: 25px;
+	font-size: large;
 }
 
 .gridItem {
@@ -19,6 +18,9 @@ form {
 	border-color: rgb(109, 88, 64);
 	border-radius: 20px;
 	padding: 10px;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
 }
 
 .topText {
@@ -41,28 +43,23 @@ form {
 }
 
 .buttonAndResult {
-	display: inline-grid;
+	display: grid;
+	align-content: center;
 	grid-template-columns: auto auto;
-	padding-top: 30px;
-	padding-left: 30px;
+	padding: 30px;
+	padding-left: 80px;
 }
 
 input[type=button] {
 	text-decoration: none;
 	padding: 15px 20px;
-	background-color: rgb(243, 243, 220);
-	color: rgb(161, 68, 24);
+	background-color: rgb(109, 88, 64);
+	color: rgb(243, 243, 220);
 	font-family: Arial;
 	font-size: 150%;
-	border-radius: 30px;
-	border: 2px solid rgb(161, 68, 24);
+	border: 2px solid rgb(243, 243, 220);
 	margin: 3px;
-}
-
-input[type=button].active {
-	background-color: rgb(255, 222, 172);
-	color: rgb(133, 56, 20);
-	border: 2px solid rgb(133, 56, 20);
+	border-radius: 7px;
 }
 
 input[type=button]:hover {

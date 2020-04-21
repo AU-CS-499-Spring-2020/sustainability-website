@@ -1,5 +1,82 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+/*
+Input Validation
+*/
+
+function getNumberOfStudents() {
+	var numberOfStudentsOnCampus = document.getElementById("numberOfStudentsOnCampus").value;
+	if(numberOfStudentsOnCampus == null || isNaN(numberOfStudentsOnCampus)) {
+		numberOfStudentsOnCampus = 5095;
+	}
+	return numberOfStudentsOnCampus;
+}
+
+function getNumberOfCommutersAndFaculty() {
+	var numberOfCommutersAndFaculty = document.getElementById("numberOfCommutersAndFaculty").value;
+	if(numberOfCommutersAndFaculty == null || isNaN(numberOfCommutersAndFaculty)) {
+		numberOfCommutersAndFaculty = 1100;
+	}
+	return numberOfCommutersAndFaculty;
+}
+
+function getAverageNumberOfMiles() {
+	var averageNumberOfMiles = document.getElementById("averageNumberOfMiles").value;
+	if(averageNumberOfMiles == null || isNaN(averageNumberOfMiles)) {
+		averageNumberOfMiles = 16;
+	}
+	return averageNumberOfMiles;
+}
+
+function getNaturalGas() {
+	var naturalGas = document.getElementById("naturalGas").value;
+	if(naturalGas == null || isNaN(naturalGas)) {
+		naturalGas =
+	}
+	return naturalGas;
+}
+
+function getKilowattHours() {
+	var kilowattHours = document.getElementById("kilowattHours").value;
+	if(kilowattHours == null || isNaN(kilowattHours)) {
+		kilowattHours =
+	}
+	return kilowattHours;
+}
+
+function getFuelOil() {
+	var fuelOil = document.getElementById("fuelOil").value;
+	if(fuelOil == null || isNaN(fuelOil)) {
+		fuelOil =
+	}
+	return fuelOil;
+}
+
+function getPropane() {
+	var propane = document.getElementById("propane").value;
+	if(propane == null || isNaN(propane)) {
+		propane =
+	}
+	return propane;
+}
+
+function getPercentRecycled() {
+	var percentRecycled = document.getElementById("percentRecycled").value;
+	if(percentRecycled.includes("%")) {
+		percentRecycled.replace("%", '');
+	}
+	if(percentRecycled == null || isNaN(percentRecycled)) {
+		percentRecycled = 35;
+	}
+	return percentRecycled
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+Variables from "People"
+*/
+
 function emissionsFromOnCampusStudents(numberOfStudentsOnCampus) {
 	averageNumberOfCOEmissionsPerYearPerPerson = 692;
 	return averageNumberOfCOEmissionsPerYearPerPerson * numberOfStudentsOnCampus;
@@ -23,6 +100,10 @@ function totalEmissionsFromPeople(numberOfStudentsOnCampus,
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+Variables from "Power Usage"
+*/
 
 function emissionsFromNaturalGas(naturalGas){
 	var COEmissionsForNaturalGas = 119.58;
@@ -56,6 +137,10 @@ function totalEmissionsFromPowerUsage(naturalGas,
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+Variables from "Recycling"
+*/
 
 function emissionsSavedFromAluminum(aluminum, numberOfPeopleOnCampus) {
 	if(aluminum) {
@@ -108,21 +193,21 @@ function totalEmissionsSavedFromRecycling(aluminum,
 
 function calculateEmissions() {
 	//Variables from "People"
-	var numberOfStudentsOnCampus = document.getElementById("numberOfStudentsOnCampus").value;
-	var numberOfCommutersAndFaculty = document.getElementById("numberOfCommutersAndFaculty").value;
-	var averageNumberOfMiles = document.getElementById("numberOfStudentsOnCampus").value;
+	var numberOfStudentsOnCampus = getNumberOfStudents();
+	var numberOfCommutersAndFaculty = getNumberOfCommutersAndFaculty();
+	var averageNumberOfMiles = getAverageNumberOfMiles();
 	var numberOfPeopleOnCampus = numberOfStudentsOnCampus + numberOfCommutersAndFaculty;
 	//Variables from "Power Usage"
-	var naturalGas = document.getElementById("naturalGas").value;
-	var kilowattHours = document.getElementById("kilowattHours").value;
-	var fuelOil = document.getElementById("fuelOil").value;
-	var propane = document.getElementById("propane").value;
+	var naturalGas = getNaturalGas();
+	var kilowattHours = getKilowattHours();
+	var fuelOil = getFuelOil();
+	var propane = getPropane();
 	//Variables from "Recycling"
 	var aluminum = document.getElementById("aluminum").checked;
 	var plastic = document.getElementById("plastic").checked;
 	var glass = document.getElementById("glass").checked;
 	var paper = document.getElementById("paper").checked;
-	var percentRecycled = document.getElementById("percentRecycled").value;
+	var percentRecycled = getPercentRecycled();
 
 	var totalEmissions = 0;
 
@@ -133,7 +218,7 @@ function calculateEmissions() {
 		totalEmissionsFromPowerUsage(naturalGas,
 			kilowattHours,
 			fuelOil,
-			propane) ); -
+			propane) ) -
 		totalEmissionsSavedFromRecycling(aluminum,
 			plastic,
 			glass,
@@ -141,6 +226,7 @@ function calculateEmissions() {
 			numberOfPeopleOnCampus,
 			percentRecycled);
 
+	//input result in "Result" box and truncate to 2 decimal points
 	result.value = totalEmissions.toFixed(2);
 }
 
