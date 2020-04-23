@@ -6,7 +6,7 @@ Input Validation
 
 function getNumberOfStudents() {
 	var numberOfStudentsOnCampus = document.getElementById("numberOfStudentsOnCampus").value;
-	if(numberOfStudentsOnCampus == null || isNaN(numberOfStudentsOnCampus)) {
+	if(numberOfStudentsOnCampus == '' || isNaN(numberOfStudentsOnCampus)) {
 		numberOfStudentsOnCampus = 5095;
 	}
 	return numberOfStudentsOnCampus;
@@ -14,7 +14,7 @@ function getNumberOfStudents() {
 
 function getNumberOfCommutersAndFaculty() {
 	var numberOfCommutersAndFaculty = document.getElementById("numberOfCommutersAndFaculty").value;
-	if(numberOfCommutersAndFaculty == null || isNaN(numberOfCommutersAndFaculty)) {
+	if(numberOfCommutersAndFaculty == '' || isNaN(numberOfCommutersAndFaculty)) {
 		numberOfCommutersAndFaculty = 1100;
 	}
 	return numberOfCommutersAndFaculty;
@@ -22,7 +22,7 @@ function getNumberOfCommutersAndFaculty() {
 
 function getAverageNumberOfMiles() {
 	var averageNumberOfMiles = document.getElementById("averageNumberOfMiles").value;
-	if(averageNumberOfMiles == null || isNaN(averageNumberOfMiles)) {
+	if(averageNumberOfMiles == '' || isNaN(averageNumberOfMiles)) {
 		averageNumberOfMiles = 16;
 	}
 	return averageNumberOfMiles;
@@ -30,42 +30,42 @@ function getAverageNumberOfMiles() {
 
 function getNaturalGas() {
 	var naturalGas = document.getElementById("naturalGas").value;
-	if(naturalGas == null || isNaN(naturalGas)) {
-		naturalGas =
+	if(naturalGas == '' || isNaN(naturalGas)) {
+		naturalGas = (3071 * 5096);
 	}
 	return naturalGas;
 }
 
 function getKilowattHours() {
 	var kilowattHours = document.getElementById("kilowattHours").value;
-	if(kilowattHours == null || isNaN(kilowattHours)) {
-		kilowattHours =
+	if(kilowattHours == '' || isNaN(kilowattHours)) {
+		kilowattHours = (5455 * 5096);
 	}
 	return kilowattHours;
 }
 
 function getFuelOil() {
 	var fuelOil = document.getElementById("fuelOil").value;
-	if(fuelOil == null || isNaN(fuelOil)) {
-		fuelOil =
+	if(fuelOil == '' || isNaN(fuelOil)) {
+		fuelOil = (4848 * 5096);
 	}
 	return fuelOil;
 }
 
 function getPropane() {
 	var propane = document.getElementById("propane").value;
-	if(propane == null || isNaN(propane)) {
-		propane =
+	if(propane == '' || isNaN(propane)) {
+		propane = (2243 * 5096);
 	}
 	return propane;
 }
 
 function getPercentRecycled() {
 	var percentRecycled = document.getElementById("percentRecycled").value;
-	if(percentRecycled.includes("%")) {
-		percentRecycled.replace("%", '');
+	if(percentRecycled.indexOf('%') > -1) {
+		percentRecycled = percentRecycled.replace('%', '');
 	}
-	if(percentRecycled == null || isNaN(percentRecycled)) {
+	if(percentRecycled == '' || isNaN(percentRecycled)) {
 		percentRecycled = 35;
 	}
 	return percentRecycled
@@ -96,7 +96,6 @@ function totalEmissionsFromPeople(numberOfStudentsOnCampus,
 			averageNumberOfMiles) {
 	return emissionsFromOnCampusStudents(numberOfStudentsOnCampus) +
 		emissionsFromDrivers(numberOfCommutersAndFaculty, averageNumberOfMiles);
-	//get formulas for zip code
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -211,15 +210,14 @@ function calculateEmissions() {
 
 	var totalEmissions = 0;
 
-	totalEmissions += 
-		( totalEmissionsFromPeople(numberOfStudentsOnCampus,
+	totalEmissions += totalEmissionsFromPeople(numberOfStudentsOnCampus,
 			numberOfCommutersAndFaculty,
-			averageNumberOfMiles) +
-		totalEmissionsFromPowerUsage(naturalGas,
+			averageNumberOfMiles);
+	totalEmissions = totalEmissions + totalEmissionsFromPowerUsage(naturalGas,
 			kilowattHours,
 			fuelOil,
-			propane) ) -
-		totalEmissionsSavedFromRecycling(aluminum,
+			propane);
+	totalEmissions = totalEmissions - totalEmissionsSavedFromRecycling(aluminum,
 			plastic,
 			glass,
 			paper,

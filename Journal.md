@@ -165,8 +165,13 @@ April 14-
 	Group met to practice URCA presentation
 
 April 21 -
-	Eric - Made fonts bigger
+Eric - Made fonts bigger on calculator
 	Changed calculator "submit" button
 	Created mobile version of calculator
-	Fixed centering issues on some devices
-	Added input validation and default values into JS
+	Fixed centering issues on some devices for calculator
+	Added input validation and default values into JS for calculator
+
+April 23 -
+Group recorded URCA presentation
+Eric - Finished inputting default values in calculator
+	Slightly fixed mobile CSS
