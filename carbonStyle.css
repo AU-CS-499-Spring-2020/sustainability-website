@@ -56,6 +56,10 @@ form {
 	padding-left: 80px;
 }
 
+.resultTextBox {
+	width: 205px;
+}
+
 input[type=button] {
 	text-decoration: none;
 	padding: 15px 20px;

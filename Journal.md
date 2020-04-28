@@ -175,3 +175,8 @@ April 23 -
 Group recorded URCA presentation
 Eric - Finished inputting default values in calculator
 	Slightly fixed mobile CSS
+
+April 28 -
+Eric - Added explanation of default values for calculator
+	Added "alert" if inputs that are not a number are inputted
+	Calculator should be done!
