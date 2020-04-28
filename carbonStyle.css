@@ -34,6 +34,12 @@ form {
 	text-align: center;
 }
 
+.defaultValuesText {
+	text-align: center;
+	font-size: 100%;
+	padding-bottom: 7px;
+}
+
 
 .recyclingElements {
 	display: grid;
