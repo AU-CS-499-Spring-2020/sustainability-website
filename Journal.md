@@ -161,6 +161,8 @@ Kyle - Added many new location information updates to map page from list obtaine
 
 Phil - Added image showing the paper recycling process
 
+Ben - reorganized Info Page - added links to different sections of the page and a "back to top" link
+
 April 14-
 	Group met to practice URCA presentation
 	
