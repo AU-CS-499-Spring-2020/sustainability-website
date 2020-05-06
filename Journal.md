@@ -180,3 +180,8 @@ April 28 -
 Eric - Added explanation of default values for calculator
 	Added "alert" if inputs that are not a number are inputted
 	Calculator should be done!
+	
+May 5
+Kyle - Tried to sign up for Amazon Web Services S3 account for web hosting, they never got back with me on reviewing my application for a student account, so
+	I implemented a GitHub sites page instead, which our page is available at:
+	https://au-cs-499-spring-2020.github.io/sustainability-website/
