@@ -163,6 +163,10 @@ Phil - Added image showing the paper recycling process
 
 April 14-
 	Group met to practice URCA presentation
+	
+
+April 18- 
+Philip - added information to the e waste
 
 April 21 -
 Eric - Made fonts bigger on calculator
@@ -176,6 +180,15 @@ Group recorded URCA presentation
 Eric - Finished inputting default values in calculator
 	Slightly fixed mobile CSS
 
+April 25 - 
+Phillip- Added information to minimalistic living, green home, solar panel, wind mill section, how recycling helps, benefits sections. Picture added to metal
+
+April 26 - 
+Phillip- Added information to statistics sections. Picture added to e waste, cardboard
+
+April 25 - 
+Phillip- Added information to food waste section
+
 April 28 -
 Eric - Added explanation of default values for calculator
 	Added "alert" if inputs that are not a number are inputted
@@ -186,3 +199,4 @@ Kyle - Tried to sign up for Amazon Web Services S3 account for web hosting, they
 	I implemented a GitHub sites page instead, which our page is available at:
 	https://au-cs-499-spring-2020.github.io/sustainability-website/
 	- Added mobile favicon icon code to pages for Apple iOS Safari mobile devices
+Phillip - fixed nav bar to display on contest page
